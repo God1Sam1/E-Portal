@@ -1,0 +1,542 @@
+<!-- Add font awesome CDN-->
+<!-- jquery -->
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>E-Learning-Portal</title>
+        <link rel="stylesheet" href="Index.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=dosis">
+        <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+        <link href="https://fonts.googleapis.com/css?family=Hind&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script> 
+        <style>
+            @import url('https://fonts.googleapis.com/css2?family=Metal+Mania&display=swap');
+            /* font-family: 'Metal Mania', cursive; */
+            @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@500&display=swap');
+            /* font-family: 'Metal Mania', cursive;  |  font-family: 'Noto Sans JP', sans-serif; */
+            @import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+            /*font-family: 'Baloo Da 2', cursive;" */
+            @import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,500&display=swap');
+            /* font-family: 'Roboto', sans-serif; */
+            @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&display=swap');
+            /* font-family: 'Dancing Script', cursive;" */
+            @import url('https://fonts.googleapis.com/css2?family=Markazi+Text&display=swap');
+            /* font-family: 'Markazi Text', serif;   */
+            </style>
+        <style>
+      h2{
+      color: firebrick;
+      font-family: 'Noto Sans JP', sans-serif;  
+      font-weight: 450;
+      text-align: left;
+      }
+    body {font-family: Arial;}
+    
+    /* Style the tab */
+    .tab {
+      overflow: hidden;
+    }
+    
+    /* Style the buttons inside the tab */
+    .tab button {
+      background-color: inherit;
+      float: left;
+      border: outset;
+      outline: none;
+      cursor: pointer;
+      padding: 14px 16px;
+      transition: 0.3s;
+      font-size: 17px;
+    }
+    
+    /* Change background color of buttons on hover */
+    .tab button:hover {
+      background-color: #ddd;
+      cursor: grab;
+    }
+    
+    /* Create an active/current tablink class */
+    .tab button.active {
+      background-color: #ccc;
+    }
+    
+    /* Style the tab content */
+    .tabcontent {
+      border:none;
+      display: none;
+      padding: 6px 12px;
+      border-top: none;
+      min-height:550px;
+    }
+    
+    img {
+      float: left;
+       margin-right:20px;
+    }
+    h2{
+      padding:20px; text-align:center
+    }
+    h3{
+      padding:20px;
+    }
+.pre-body{
+background-image:url(loading.gif);
+background-attachment:fixed;
+background-position:center;
+background-color:#000;
+background-repeat: no-repeat;
+}
+.pre-body .padd
+{
+padding-top:240px;
+}
+	
+    </style>
+    <script>
+      // Tab
+      function openLink(evt, pageName) {
+      var i, tabcontent, tablinks;
+      tabcontent = document.getElementsByClassName("tabcontent");
+      for (i = 0; i < tabcontent.length; i++) {
+        tabcontent[i].style.display = "none";
+      }
+      tablinks = document.getElementsByClassName("tablinks");
+      for (i = 0; i < tablinks.length; i++) {
+        tablinks[i].className = tablinks[i].className.replace(" active", "");
+      }
+      document.getElementById(pageName).style.display = "block";
+      evt.currentTarget.className += " active";}
+
+      
+      // Page 2
+      jQuery(document).ready(function($){
+  // first image
+  $('.test-1').on({
+       'click': function(){
+         $('#change-image').attr("src", "1.jpg");
+       }
+   });
+   
+  //  second image
+  $('.test-2').on({
+       'click': function(){
+           $('#change-image').attr("src", "2.jpg")
+           $(".testimonial").removeClass("active");
+           $("#"+$(this).attr("alt")).addClass("active");
+       }
+   });
+    
+  //  third image
+  $('.test-3').on({
+       'click': function(){
+           $('#change-image').attr("src", "3.jpg");
+           $(".testimonial").removeClass("active");
+           $("#"+$(this).attr("alt")).addClass("active");
+       }
+   });
+   
+  //  fourth image
+  $('.test-4').on({
+       'click': function(){
+        $('#change-image').attr("src", "4.jpg");      
+        $(".testimonial").removeClass("active");
+        $("#"+$(this).attr("alt")).addClass("active");
+       }
+   });
+
+     //  5th image
+  $('.test-5').on({
+    'click': function(){
+     $('#change-image').attr("src", "5.jpg");      
+     $(".testimonial").removeClass("active");
+     $("#"+$(this).attr("alt")).addClass("active");
+    }
+});
+
+  //  6th image
+  $('.test-6').on({
+    'click': function(){
+     $('#change-image').attr("src", "6.jpg");      
+     $(".testimonial").removeClass("active");
+     $("#"+$(this).attr("alt")).addClass("active");
+    }
+});
+
+  //  7th image
+  $('.test-7').on({
+    'click': function(){
+     $('#change-image').attr("src", "7.jpg");      
+     $(".testimonial").removeClass("active");
+     $("#"+$(this).attr("alt")).addClass("active");
+    }
+});
+
+  //  8th image
+  $('.test-8').on({
+    'click': function(){
+     $('#change-image').attr("src", "8.jpg");      
+     $(".testimonial").removeClass("active");
+     $("#"+$(this).attr("alt")).addClass("active");
+    }
+});
+});
+    </script>
+
+<style>
+	.preloader-body{
+		background-image:url(loading.gif);
+		background-attachment:fixed;
+		background-position:center;
+		background-color:#000;
+		background-repeat: no-repeat;
+	}
+	#preloader .padd
+	{
+		padding-top:140px;
+	}
+	</style>
+<script>
+function showPage() {
+  document.getElementById("preloader").style.display = "none";
+  document.getElementById("Wholepage").style.display = "block";
+  $("body").removeClass("preloader-body");
+}
+setTimeout(showPage, 3000);
+</script>
+    </head> 
+<body class="preloader-body">
+	
+<div id="preloader">
+<div color="54faf2">
+<div class="padd">
+<h2>Initialization System</h2>
+<h3>Please wait...</h3>
+</div>
+</div>
+</div>
+	
+	
+
+    <div id="Wholepage" style="display:none">
+    <h2 style="font-family:cursive;font-size: 60px;color: darkcyan;" title="E-Learing Portal">E-Learning</h2>
+    <div class="tab">
+      <button  class="tablinks active" onclick="openLink(event, 'Page1')">HOME</button>
+      <button  class="tablinks" onclick="openLink(event, 'Page2')">About us</button>
+      <button  class="tablinks" onclick="openLink(event, 'Page3')">Curriculum and Pricing</button>
+      <button  class="tablinks" onclick="openLink(event, 'Page4')">Features</button>
+      <button  class="tablinks" onclick="openLink(event, 'Page5')">Contact us</button>
+      
+    </div>
+    <div id="Page1" class="tabcontent active" style="display: block;">
+        <div  id="MilkyWay" ><br><br>
+          <div class="main">
+            <input id="input" name="box" placeholder="Type to search" type="text"> <button id="WHO">
+              <i class='fas fa-search'></i> 
+            </button>
+          </div><br><br><br>
+          <div>
+          <iframe src="https://www.youtube.com/embed/viHILXVY_eU" height="300px" width="500px" frameborder="0"></iframe>
+          <p style="font-size: 20px;margin-left: 15px;">A <strong> online learning platform</strong> is an integrated set of interactive <strong>online services</strong> that provide <br> trainers,<strong> learners</strong> , and others involved in education with information, <br> tools and resources to support and enhance education delivery and management.
+          </p></div><br>
+          <br><br>
+          <div id="Sign-in">  
+              All children will enjoy our classes <br>
+              We are giving one free trial class, <br> 
+              Free registeration OPEN click here to Sign In now &#128073;<a href="sign in form/index.html"><button id="WHO">Sign In here</button></a>
+            
+          </div>
+        </div>
+    </div>
+
+    <div id="Page2" class="tabcontent" ><br><br><br>
+      <div id="MilkyWay" >
+
+        <section id="client-reviews">
+          <div class="container">
+            <div class="testimonials">
+              <!-- first grid -->
+              <div class="images">
+                <img id="change-image" src="1.jpg"alt="test-1">
+              </div>
+             
+               <!-- second grid -->
+               <div class="reviews">
+      
+                 <!-- first review -->
+              <div class="testimonial active" id="test-1">
+                  <h1>Jhon Teen</h1>
+                  <p>Chief Executive Officer</p>
+                  <p>eSasson Studios</p> <br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+              <p class="description">Working with the team has been a huge success! They're good people who care deeply about our business!</p></div>
+      
+               <!-- 2th review -->
+              <div class="testimonial" id="test-2">
+                  <h1>Trim Cure</h1>
+                  <p>Technical Emp</p>
+                  <p>Intel</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description">Working with people has been a great experience for us! company has enabled us to move quickly and expand our portfolio..</p>
+              </div>
+      
+              <!-- 3th review -->
+              <div class="testimonial" id="test-3">
+                  <h1>Harry Peter</h1>
+                  <p>Founder</p>
+                  <p>MTBC Soft</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description">Our business relies on fast and reliable talent and support. Company <br> gives us that and much more.</p>
+              </div>
+      
+              <!-- 4th review -->
+              <div class="testimonial" id="test-4">
+                  <h1>Emma Parker</h1>
+                  <p>Tech Lead</p>
+                  <p>Unicorn Black</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description">Working with company is like having a whole team of highly skilled colleagues. A winning team, definitely.</p>
+              </div>
+      
+              <!-- 5th review -->
+              <div class="testimonial" id="test-5">
+                  <h1>Jhony Mich</h1>
+                  <p>Chief Executive Officer</p>
+                  <p>MicroX Studios</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description">We've consistently received the best support, account management, and expert insight you would hope to have from a great web partner.</p>
+              </div>
+      
+              <!-- 6th review -->
+              <div class="testimonial" id="test-6">
+                  <h1>Michael Jacky</h1>
+                  <p>Producer</p>
+                  <p>Gold leaf</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description"> Company has been very open to us and all of our crazy ideas. <br> They made it very easy for someone that has no idea how to code.</p>
+              </div>
+      
+              <!-- 7th review -->
+              <div class="testimonial" id="test-7">
+                  <h1>Ricky Auston</h1>
+                  <p>Director</p>
+                  <p>Blue Technology</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description">Having worked with the company team previously, we were confident that Nate and the team would be able to ensure they used best-practices.</p>
+              </div>
+      
+              <!-- 8th review -->
+              <div class="testimonial" id="test-8">
+                  <h1>Peter Bridge</h1>
+                  <p>Account Officer</p>
+                  <p>Brown Studios</p><br>
+                  <i class="fa fa-quote-left" aria-hidden="true"></i> 
+                <p class="description">This company team goes beyond our expectations by suggesting or implementing things in ways we didn’t realize were even possible.</p>
+              </div>
+              
+      
+              <!-- team members -->
+              <div class="team-members">
+              <img src="1.jpg"  alt="test-1" class="test-1" id="active">
+              <img src="2.jpg"  alt="test-2" class="test-2">
+              <img src="3.jpg"  alt="test-3" class="test-3">
+              <img src="4.jpg"  alt="test-4" class="test-4">
+              <img src="5.jpg"  alt="test-5" class="test-5">
+              <img src="6.jpg"  alt="test-6" class="test-6">
+              <img src="7.jpg"  alt="test-7" class="test-7">
+              <img src="8.jpg"  alt="test-8" class="test-8">
+              </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      
+      </div>
+    </div>
+ 
+    <div id="Page3" class="tabcontent "><br><br>
+        <div id="MilkyWay">   
+          <div id="div">  
+            <section class="price-comparison">
+     
+      <div class="price-column">
+        <div class="price-header">
+        <div class="price">
+          <div class="dollar-sign">$</div>
+          7
+          <div class="per-month">/mo</div>
+        </div>
+        <div class="plan-name">Basic</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        
+        Feature A
+      </div>
+      <div class="feature">
+        
+        Feature B
+      </div>
+      <div class="feature inactive">  
+        
+        Feature C
+      </div>
+      <div class="feature inactive">
+        
+        Feature D
+      </div>
+      <div class="feature inactive">
+        
+        Feature E
+      </div>
+      <div class="feature inactive">
+        
+        Feature F
+      </div>
+      <a href="Pay/1stPay.html"><button  style="box-shadow: none;" class="cta">Start Today</button></a>
+    </div>
+  </section>
+    <section class="price-comparison">
+      <div class="price-column popular">
+      <div class="most-popular">Most Popular</div>
+      <div class="price-header">
+        <div class="price">
+          <div class="dollar-sign">$</div>
+          50
+          <div class="per-month">/mo</div>
+        </div>
+        <div class="plan-name">Professional</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        
+        Feature A
+      </div>
+      <div class="feature">
+        
+        Feature B
+      </div>
+      <div class="feature">
+        
+        Feature C
+      </div>
+      <div class="feature">
+        
+        Feature D
+      </div>
+      <div class="feature">
+        
+        Feature E
+      </div>
+      <div class="feature">
+        
+        Feature F
+      </div>
+      <a href="Pay/3rdPay.html"><button style="box-shadow: none;" class="cta">Start Today</button></a>
+    </div>
+    </section>
+    <section class="price-comparison">
+      <div class="price-column">
+      <div class="price-header">
+        <div class="price">
+          <div class="dollar-sign">$</div>
+          15
+          <div class="per-month">/mo</div>
+        </div>
+        <div class="plan-name">Standard</div>
+      </div>
+      <div class="divider"></div>
+      <div class="feature">
+        
+        Feature A
+      </div>
+      <div class="feature">
+        
+        Feature B
+      </div>
+      <div class="feature">
+        
+        Feature C
+      </div>
+      <div class="feature">
+        
+        Feature D
+      </div>
+      <div class="feature inactive">
+       
+        Feature E
+      </div>
+      <div class="feature inactive">
+        
+        Feature F
+      </div>
+      <a href="Pay/2ndPay.html"><button style="box-shadow: none;" class="cta">Start Today</button></a>
+    </div>
+  </section><br><br><br><br>
+
+</div>
+    </div>
+  </div>
+    <div id="Page4" class="tabcontent "><br><br>
+      <div id="MilkyWay">
+        <p style="font-size: 20px;">We will have four batch and we will conduct these classes on weekdays.</p>
+          <div style="color: blue;font-size: 20px;">
+          Classes - <br>
+          1 - I to V <br>
+          2 - V to VIII <br>
+          3 - IX to X <br>
+          4 - XI to XII <br><br>
+          <img src="https://www.thetrumpet.com/files/W1siZiIsIjIwMTcvMDMvMDcvOG1pMW0yY2liel9maWxlIl0sWyJwIiwidGh1bWIiLCIxMDI0eCJdLFsicCIsImVuY29kZSIsImpwZyIsIi1xdWFsaXR5IDgwIl1d/4867ea435d360f33/locus_12779.jpg.jpg" alt="" height="250px" width="400px">
+          <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+          </div>
+          <p style="font-size: 20px;">We are giving one free trial class</p>
+          <p style="font-size: 20px;">Easy registeration click here to Sign In now &#128073;<a href="sign in form/index.html"><button id="WHO">Sign In here</button></a></p>
+          <br><br>
+          <p style="font-size: 20px;">This online
+            course will provide you with instructional materials. You may also be asked to download
+            presentations, slides, and illustrative graphics. In addition, you may have instructional
+            materials that consist of video snippets or short videos. In this case, you’ll often have
+            the option to stream the content rather than having to download an enormous file.</p><br><br>
+            <p style="font-size: 20px;"> Students will participate in discussions facilitated by the instructor. A series of
+              questions are posted in the forums that all students must respond and comment. It's a 
+              great way to respond to questions and to share documents and links. It's also a good
+              place to ask questions and to clear up ambiguities</p>
+              <br><br>
+              <p style="font-size: 20px;"> Each Day you will work on an exercise, responding to a series of
+                questions that will ask you to analyze a situation and develop a solution. The exercise
+                has a timeline for submission in order to receive a grade</p>
+                <br><br>
+                <p style="font-size: 20px;">Each week you will need to complete a short quiz to help you measure
+                your progress in the course. Most courses also include a final test.
+                  </p>
+      </div>  
+    </div>
+
+    <div id="Page5" class="tabcontent ">
+      <div id="MilkyWay">
+        <div class="contact-section">
+          
+          <h1>Contact Us</h1> 
+          <div class="border"></div>
+          <form class="contact-form" method="post">
+            <input type="text" class="contact-form-text" placeholder="Your name">
+            <input type="email" class="contact-form-text" placeholder="Your email">
+            <input type="text" class="contact-form-text" placeholder="Your phone">
+            <textarea class="contact-form-text" placeholder="Your message"></textarea>
+            <input type="submit" class="contact-form-btn" value="Send">
+          </form> 
+        </div>
+      </div>
+    </div>
+  </div>
+</div><br><br><br><br><br><br>
+<a href="Get in touch/Get.html">
+  <button class="floating-btn">
+    Get in Touch
+      </button></a> 
+    </body>
+    </html> 
+    
